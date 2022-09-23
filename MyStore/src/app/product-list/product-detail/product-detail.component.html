@@ -1,0 +1,37 @@
+<section class="container">
+  <div class="row">
+    <div class="col-md-5">
+      <img src="{{ products.image }}" />
+  
+    </div>
+    <div class="col-md-7  mt-5">
+      <div>
+        <div class="description">
+          <label>{{ products.title }}</label>
+          <label>${{ products.price }}</label>
+          <small>{{ products.description }}</small>
+        </div>
+        <div class="cart-options">
+          <select class="form-control w-25"
+            name="quantity"
+            [(ngModel)]="quantity"
+            value="{{ quantity }}"
+            (ngModelChange)="updateQuantity($event)"
+          >
+            <option
+              *ngFor="let i of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]"
+              value="{{ i }}"
+            >
+              {{ i }}
+              
+            </option> 
+            
+          </select>
+          
+        </div>
+          <button class="form-control w-25 btn btn-primary  my-3"   (click)="addToCart()">Add to Cart</button>
+        
+      </div>
+    </div>
+  </div>
+</section>
