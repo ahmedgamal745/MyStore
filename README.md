@@ -34,27 +34,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
  - add the product to the array
 
  
- ### Homework
- - each product have rating property
- - add component which represents rating with starts icons on each product card
- - create new component which creating a new product with all the relevant fields ( see the json file - product.json)
- - image should be URL OR static image in from the project
- - try to create a table view of the products
-
-
- ### Homework 14-03-2021
- - add validations with error messages to all Form
- - create new component that add a comment on each meal
- - each meal will present his own comments
- 
-### Homework 17-03-2021
-- Create Comments service.
-- Service should hold all the comments of each meal
-- getComments(mealNameOrId)
-- addComment(mealNameOrId,comment)
-- deleteComment(mealNameOrId,commentId)
-
-
 
 ## Git
 ### Create New Branch
@@ -76,6 +55,3 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 - move to master and run `git pull`
 
 
-### Homework 21-03-2021
-- Create custom pipe which present the requested currency - USD/EUR and multiple the price.
-- Create New application and present your bank accounts from the server 
